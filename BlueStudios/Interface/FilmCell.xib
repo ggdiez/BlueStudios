@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FilmCellIdentifier" rowHeight="151" id="iGI-po-q8Y" userLabel="FilmCellIdentifier" customClass="FilmCell" customModule="BlueStudios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iGI-po-q8Y" id="rV8-hr-Bde">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18/07/2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-3J-RBr">
+                        <rect key="frame" x="166" y="64" width="169" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="iOJ-2t-kyO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.25098234415054321" green="0.25097692012786865" blue="0.25098058581352234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-WA-dsR">
+                        <rect key="frame" x="166" y="94" width="169" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="LOH-Sm-iwp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.64619040490000001" blue="0.91655987500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad Boys Forever" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nb-LQ-xpQ">
+                        <rect key="frame" x="166" y="34" width="169" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="EQC-iV-TOS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.25098234415054321" green="0.25097692012786865" blue="0.25098058581352234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film" translatesAutoresizingMaskIntoConstraints="NO" id="dT5-gY-wjx">
+                        <rect key="frame" x="16" y="28" width="130" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="uiR-2w-iSZ"/>
+                            <constraint firstAttribute="height" constant="95" id="yMd-Qg-dA8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="z3V-WA-dsR" firstAttribute="leading" secondItem="dT5-gY-wjx" secondAttribute="trailing" constant="20" id="1uC-ne-ucZ"/>
+                    <constraint firstItem="z3V-WA-dsR" firstAttribute="top" secondItem="tdW-3J-RBr" secondAttribute="bottom" constant="8" id="4Ka-4e-HPv"/>
+                    <constraint firstItem="3Nb-LQ-xpQ" firstAttribute="leading" secondItem="dT5-gY-wjx" secondAttribute="trailing" constant="20" id="Bd7-Ay-TFH"/>
+                    <constraint firstItem="tdW-3J-RBr" firstAttribute="leading" secondItem="dT5-gY-wjx" secondAttribute="trailing" constant="20" id="FFO-sg-o5h"/>
+                    <constraint firstItem="dT5-gY-wjx" firstAttribute="leading" secondItem="rV8-hr-Bde" secondAttribute="leadingMargin" id="LDP-Wg-Cj7"/>
+                    <constraint firstAttribute="trailing" secondItem="3Nb-LQ-xpQ" secondAttribute="trailing" constant="6" id="Rkj-kt-IbR"/>
+                    <constraint firstAttribute="trailing" secondItem="z3V-WA-dsR" secondAttribute="trailing" constant="6" id="YdU-Gx-jaS"/>
+                    <constraint firstItem="3Nb-LQ-xpQ" firstAttribute="top" secondItem="rV8-hr-Bde" secondAttribute="top" constant="34" id="Z7s-pb-wZJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dT5-gY-wjx" secondAttribute="bottom" constant="17" id="bPm-JS-Iba"/>
+                    <constraint firstItem="dT5-gY-wjx" firstAttribute="top" secondItem="rV8-hr-Bde" secondAttribute="topMargin" constant="17" id="gh0-vY-Ahc"/>
+                    <constraint firstItem="tdW-3J-RBr" firstAttribute="top" secondItem="3Nb-LQ-xpQ" secondAttribute="bottom" constant="8" id="kTt-ut-vdx"/>
+                    <constraint firstAttribute="trailing" secondItem="tdW-3J-RBr" secondAttribute="trailing" constant="6" id="ylc-cP-BjH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="tdW-3J-RBr" id="AZT-DZ-BxF"/>
+                <outlet property="name" destination="3Nb-LQ-xpQ" id="NjP-PN-EML"/>
+                <outlet property="status" destination="z3V-WA-dsR" id="cNf-uT-ckH"/>
+            </connections>
+            <point key="canvasLocation" x="42.399999999999999" y="-57.121439280359823"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="film" width="400" height="270"/>
+    </resources>
+</document>
