@@ -20,23 +20,27 @@ class FilmsViewModel {
     init (filmService: FilmService) {
         self.filmService = filmService
     }
-    
+	
+	func activateSupport () {
+		if !MasterService.instance.isTestEnvirontment() {
+			SupportService.instance.setLauncherVisible(visible: true)
+		}
+	}
+	
     func loadFilms () {
-        
         filmService.getFilms(onSuccess: { (films) in
             print(films)
             self.didFilmsLoaded!(films)
         }) { (error) in
-            print(error)
+            print(error.debugDescription)
         }
     }
     
     func changeFilmStatus (filmId: String, filmStatus: FilmStatus) {
-        
         filmService.changeFilmStatus(filmId: filmId, filmStatus: filmStatus, onSuccess: { (films) in
             self.didFilmsLoaded!(films)
         }) { (error) in
-            print(error)
+            print(error.debugDescription)
         }
     }
 }

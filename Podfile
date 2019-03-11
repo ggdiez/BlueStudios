@@ -6,6 +6,7 @@ target 'BlueStudios' do
     pod 'NVActivityIndicatorView', '4.4.0'
     pod 'Alamofire', '4.7'
     pod 'GSMessages', '1.6.1'
+	pod 'Intercom', '5.1.9'
     target 'BlueStudiosTests' do
         inherit! :search_paths
         pod 'Hippolyte', '0.5.0', :configurations => ['Debug']

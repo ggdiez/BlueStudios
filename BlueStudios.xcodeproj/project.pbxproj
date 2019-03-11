@@ -39,6 +39,8 @@
 		BC4899ED219617EA00B0E92B /* MasterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4899EC219617EA00B0E92B /* MasterService.swift */; };
 		BC4899EF21961B6000B0E92B /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4899EE21961B6000B0E92B /* FilmCell.swift */; };
 		BC4899F121961B6D00B0E92B /* FilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4899F021961B6D00B0E92B /* FilmCell.xib */; };
+		BC49D4732236D5FC00DDB70C /* SupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49D4722236D5FC00DDB70C /* SupportService.swift */; };
+		BC49D4752236D64A00DDB70C /* ThirdParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49D4742236D64A00DDB70C /* ThirdParty.swift */; };
 		BCEEFDE92196D8300092493E /* AccesibilityLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFDE82196D8300092493E /* AccesibilityLabels.swift */; };
 		BCEEFDEB2196DA760092493E /* AcceptanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFDEA2196DA760092493E /* AcceptanceTestCase.swift */; };
 		BCEEFDED2196DAAF0092493E /* FilmsViewUITestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFDEC2196DAAF0092493E /* FilmsViewUITestCases.swift */; };
@@ -99,6 +101,8 @@
 		BC4899EC219617EA00B0E92B /* MasterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterService.swift; sourceTree = "<group>"; };
 		BC4899EE21961B6000B0E92B /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
 		BC4899F021961B6D00B0E92B /* FilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCell.xib; sourceTree = "<group>"; };
+		BC49D4722236D5FC00DDB70C /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
+		BC49D4742236D64A00DDB70C /* ThirdParty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdParty.swift; sourceTree = "<group>"; };
 		BCEEFDE82196D8300092493E /* AccesibilityLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesibilityLabels.swift; sourceTree = "<group>"; };
 		BCEEFDEA2196DA760092493E /* AcceptanceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptanceTestCase.swift; sourceTree = "<group>"; };
 		BCEEFDEC2196DAAF0092493E /* FilmsViewUITestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewUITestCases.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 		BC4899912196029000B0E92B /* BlueStudios */ = {
 			isa = PBXGroup;
 			children = (
+				BC49D4712236D5EA00DDB70C /* Support */,
 				BCEEFDE72196D7FA0092493E /* Accesibility */,
 				BC4899C32196041100B0E92B /* Network */,
 				BC4899C22196040700B0E92B /* APIClient */,
@@ -178,6 +183,7 @@
 				BC48999B2196029200B0E92B /* LaunchScreen.storyboard */,
 				BC48999E2196029200B0E92B /* Info.plist */,
 				BC4899E021960CC100B0E92B /* BackendConfiguration.swift */,
+				BC49D4742236D64A00DDB70C /* ThirdParty.swift */,
 			);
 			path = BlueStudios;
 			sourceTree = "<group>";
@@ -296,6 +302,14 @@
 			path = NetworkTests;
 			sourceTree = "<group>";
 		};
+		BC49D4712236D5EA00DDB70C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BC49D4722236D5FC00DDB70C /* SupportService.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		BCEEFDE72196D7FA0092493E /* Accesibility */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +348,7 @@
 				BC48998C2196029000B0E92B /* Frameworks */,
 				BC48998D2196029000B0E92B /* Resources */,
 				CC29580E77C73E66B6A0021D /* [CP] Embed Pods Frameworks */,
+				9AE0FADE68A520D6BFE5C17D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -499,6 +514,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9AE0FADE68A520D6BFE5C17D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlueStudios/Pods-BlueStudios-resources.sh",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Intercom.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IntercomTranslations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueStudios/Pods-BlueStudios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CC29580E77C73E66B6A0021D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +576,8 @@
 				BC4899DE21960BB500B0E92B /* FilmRouter.swift in Sources */,
 				BC4899B62196033300B0E92B /* FilmsViewModel.swift in Sources */,
 				BC4899B82196033F00B0E92B /* InterfaceBuilder.swift in Sources */,
+				BC49D4732236D5FC00DDB70C /* SupportService.swift in Sources */,
+				BC49D4752236D64A00DDB70C /* ThirdParty.swift in Sources */,
 				BC4899E721960F0000B0E92B /* StatusCode.swift in Sources */,
 				BC4899B42196032600B0E92B /* FilmsViewController.swift in Sources */,
 				BC4899E121960CC100B0E92B /* BackendConfiguration.swift in Sources */,

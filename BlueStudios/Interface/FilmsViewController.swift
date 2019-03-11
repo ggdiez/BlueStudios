@@ -36,6 +36,7 @@ final class FilmsViewController: UIViewController {
         configureTableView()
         bindModelView()
         viewModel.loadFilms()
+		viewModel.activateSupport()
     }
     
     private func accesibilityLabels () {
@@ -114,4 +115,3 @@ extension FilmsViewController {
         present(actionController, animated: false, completion: nil)
     }
 }
-

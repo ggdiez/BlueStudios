@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.0)
   - GSMessages (1.6.1)
   - Hippolyte (0.5.0)
+  - Intercom (5.1.9)
   - KIF (3.7.0):
     - KIF/Core (= 3.7.0)
   - KIF/Core (3.7.0)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Alamofire (= 4.7)
   - GSMessages (= 1.6.1)
   - Hippolyte (= 0.5.0)
+  - Intercom (= 5.1.9)
   - KIF (= 3.7.0)
   - Nimble (= 7.0.1)
   - NVActivityIndicatorView (= 4.4.0)
@@ -23,6 +25,7 @@ SPEC REPOS:
     - Alamofire
     - GSMessages
     - Hippolyte
+    - Intercom
     - KIF
     - Nimble
     - NVActivityIndicatorView
@@ -31,10 +34,11 @@ SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   GSMessages: 870aa0fc8cf39bea0026535ea195376d4040313e
   Hippolyte: ac90c7dd71ae06470133ed7c1e12b80800f8bead
+  Intercom: ab60831c72fe5ff3edfa2d3a2352d06435a85478
   KIF: 1b3a52314e7f0fb46585221724e183fec8785221
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
 
-PODFILE CHECKSUM: cbf28110c727acbd08bbae8992fc810f529c7253
+PODFILE CHECKSUM: e4dcf2d30161cf52d653f46affa0f547866914ca
 
 COCOAPODS: 1.5.3
